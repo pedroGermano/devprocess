@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 ul {
@@ -19,10 +20,22 @@ img {
 
 html {
   font-size: 62.5%;
+  background: #060608;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mohave", sans-serif;
 }
 
 button {
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 15px;
 }/*# sourceMappingURL=main.css.map */
