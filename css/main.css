@@ -72,4 +72,74 @@ header button {
   font-weight: 500;
   line-height: 150%;
   border-radius: 3.2rem;
+}
+
+.s-hero {
+  width: 100%;
+  background-image: url("../../img/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80rem;
+  padding-top: 11.2rem;
+  padding-bottom: 14.3rem;
+}
+.s-hero .left {
+  width: 100%;
+  max-width: 62.2rem;
+}
+.s-hero .left .platform {
+  display: flex;
+  margin-bottom: 2.4rem;
+}
+.s-hero .left .platform span {
+  color: #c0c0c0;
+  background: #1b1b21;
+  font-size: 1.2rem;
+  line-height: 150%;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px 0px 0px 4px;
+}
+.s-hero .left .platform strong {
+  border-radius: 4px 0px 0px 4px;
+  background: #25252e;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.s-hero .left .description {
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 4.5rem;
+}
+.s-hero .left .value {
+  margin-bottom: 7.2rem;
+}
+.s-hero .left .value h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+.s-hero .left .value .btns {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+.s-hero .left .value .btns .btn-cart {
+  border-radius: 3.2rem;
+  background: #f55827;
+  padding: 1.6rem 4rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.s-hero .left h1 {
+  font-size: 5.6rem;
+  font-weight: 780;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

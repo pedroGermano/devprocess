@@ -1,0 +1,78 @@
+.s-hero {
+  width: 100%;
+  background-image: url("../../img/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80rem;
+  padding-top: 11.2rem;
+  padding-bottom: 14.3rem;
+
+  .left {
+    width: 100%;
+    max-width: 62.2rem;
+
+    .platform {
+      display: flex;
+      margin-bottom: 2.4rem;
+
+      span {
+        color: $gray-secundary;
+        background: $color-box;
+        font-size: 1.2rem;
+        line-height: 150%;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px 0px 0px 4px;
+      }
+
+      strong {
+        border-radius: 4px 0px 0px 4px;
+        background: $color-box-1;
+        padding: 0.6rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+
+    .description {
+      font-size: 1.8rem;
+      line-height: 150%;
+      margin-bottom: 4.5rem;
+    }
+    .value {
+      margin-bottom: 7.2rem;
+
+      h3 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+      }
+
+      .btns{
+        display: flex;
+        align-items: center;
+        gap: 2.2rem;
+
+        .btn-cart{
+          border-radius: 3.2rem;
+          background: $color-orange;
+          padding: 1.6rem 4rem;
+          color: $bg-white;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+    }
+    
+    h1 {
+      font-size: 5.6rem;
+      font-weight: 780;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+  }
+}
