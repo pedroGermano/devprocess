@@ -8,6 +8,12 @@
   padding-top: 11.2rem;
   padding-bottom: 14.3rem;
 
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
   .left {
     width: 100%;
     max-width: 62.2rem;
@@ -50,12 +56,12 @@
         margin-bottom: 2.4rem;
       }
 
-      .btns{
+      .btns {
         display: flex;
         align-items: center;
         gap: 2.2rem;
 
-        .btn-cart{
+        .btn-cart {
           border-radius: 3.2rem;
           background: $color-orange;
           padding: 1.6rem 4rem;
@@ -76,7 +82,7 @@
         }
       }
     }
-    
+
     h1 {
       font-size: 5.6rem;
       font-weight: 780;
@@ -85,40 +91,71 @@
       margin-bottom: 0.8rem;
     }
 
-    ul{
+    ul {
       margin-bottom: 1.7rem;
       display: flex;
       gap: 1.6rem;
 
-      li{
+      li {
         display: flex;
         align-items: center;
         align-items: center;
         gap: 1.6rem;
-        
-        &:last-child:before{
-          content: '';
-          width: .5rem;
-          height: .5rem;
+
+        &:last-child:before {
+          content: "";
+          width: 0.5rem;
+          height: 0.5rem;
           border-radius: 50%;
           background: #c0c0cc;
         }
-
       }
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
 
-        li:before{
+        li:before {
           display: none;
         }
       }
-      p{
+      p {
         color: $bg-white-1;
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 150%;
       }
+    }
+  }
+
+  .right{
+    width: 100%;
+    max-width: 9.5rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.6rem;
+    margin-top: 4.3rem;
+
+    span {
+      border-radius: .6rem;
+      background: $color-yellow;
+      display: block;
+      width: 3.2rem;
+      height: 3.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 150%;
+    }
+
+    p{
+      color: $bg-white-2;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 150%;
     }
   }
 }

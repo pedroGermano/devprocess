@@ -1,0 +1,41 @@
+footer {
+  padding-top: 9.6rem;
+  padding-bottom: 7.2rem;
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .left {
+    width: 100%;
+    max-width: 66.8rem;
+
+    strong {
+      font-family: "Mohave", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+      display: block;
+    }
+
+    p {
+      color: $bg-white-3;
+      font-size: 1.4rem;
+      line-height: 150%;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    span{
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+}

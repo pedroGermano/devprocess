@@ -84,6 +84,11 @@ header button {
   padding-top: 11.2rem;
   padding-bottom: 14.3rem;
 }
+.s-hero .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 .s-hero .left {
   width: 100%;
   max-width: 62.2rem;
@@ -179,6 +184,72 @@ header button {
 .s-hero .left ul p {
   color: #f2f2ff;
   font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.s-hero .right {
+  width: 100%;
+  max-width: 9.5rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.6rem;
+  margin-top: 4.3rem;
+}
+.s-hero .right span {
+  border-radius: 0.6rem;
+  background: #f09104;
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.s-hero .right p {
+  color: #e1e1e1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+footer {
+  padding-top: 9.6rem;
+  padding-bottom: 7.2rem;
+}
+footer .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .left {
+  width: 100%;
+  max-width: 66.8rem;
+}
+footer .left strong {
+  font-family: "Mohave", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  display: block;
+}
+footer .left p {
+  color: #ceced9;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+footer .right {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+footer .right span {
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 150%;
 }/*# sourceMappingURL=main.css.map */
