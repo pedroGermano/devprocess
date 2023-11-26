@@ -136,10 +136,49 @@ header button {
   font-weight: 500;
   line-height: 150%;
 }
+.s-hero .left .value .btns .btn-favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 2px solid #2f2f3b;
+}
 .s-hero .left h1 {
   font-size: 5.6rem;
   font-weight: 780;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+}
+.s-hero .left ul {
+  margin-bottom: 1.7rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.s-hero .left ul li {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.s-hero .left ul li:last-child:before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #c0c0cc;
+}
+.s-hero .left ul:last-child {
+  margin-bottom: 0;
+}
+.s-hero .left ul:last-child li:before {
+  display: none;
+}
+.s-hero .left ul p {
+  color: #f2f2ff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
 }/*# sourceMappingURL=main.css.map */

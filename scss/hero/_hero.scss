@@ -64,6 +64,16 @@
           font-weight: 500;
           line-height: 150%;
         }
+
+        .btn-favorite {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          width: 5.6rem;
+          height: 5.6rem;
+          border: 2px solid $gray-color;
+        }
       }
     }
     
@@ -73,6 +83,42 @@
       line-height: normal;
       text-transform: uppercase;
       margin-bottom: 0.8rem;
+    }
+
+    ul{
+      margin-bottom: 1.7rem;
+      display: flex;
+      gap: 1.6rem;
+
+      li{
+        display: flex;
+        align-items: center;
+        align-items: center;
+        gap: 1.6rem;
+        
+        &:last-child:before{
+          content: '';
+          width: .5rem;
+          height: .5rem;
+          border-radius: 50%;
+          background: #c0c0cc;
+        }
+
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+
+        li:before{
+          display: none;
+        }
+      }
+      p{
+        color: $bg-white-1;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%;
+      }
     }
   }
 }
