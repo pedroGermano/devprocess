@@ -245,6 +245,8 @@ header button {
   position: absolute;
   top: -3px;
   left: -5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .s-videos .card-video .thumbnail .thumb {
   width: 100%;
@@ -262,6 +264,9 @@ header button {
   transition: opacity 0.3s ease;
 }
 .s-videos .card-video:hover .thumbnail .icon-play {
+  opacity: 1;
+}
+.s-videos .card-video:hover .thumbnail:before {
   opacity: 1;
 }
 .s-videos .top {
