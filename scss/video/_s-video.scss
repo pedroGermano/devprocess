@@ -2,6 +2,7 @@
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 6.4rem;
+  overflow: hidden;
 
   .card-video {
     display: block;
@@ -14,8 +15,6 @@
       font-weight: 500;
       line-height: 150%;
     }
-
-
 
     .thumbnail {
       position: relative;
@@ -32,7 +31,7 @@
         top: -3px;
         left: -5px;
         opacity: 0;
-        transition: opacity .3s ease;
+        transition: opacity 0.3s ease;
       }
 
       .thumb {
@@ -55,7 +54,7 @@
       opacity: 1;
     }
 
-    &:hover .thumbnail:before{
+    &:hover .thumbnail:before {
       opacity: 1;
     }
   }
@@ -66,10 +65,50 @@
     justify-content: space-between;
     margin-bottom: 3.2rem;
 
+    .swiper-pagination {
+      position: relative;
+      width: auto;
+      bottom: 0;
+
+      .swiper-pagination-bullet {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0;
+        background: $gray-color;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: $bg-white;
+      }
+    }
+
     h2 {
       font-size: 2.4rem;
       font-weight: 600;
       text-transform: uppercase;
     }
   }
+
+  .container{
+    position: relative;
+  }
+
+  .btn{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+
+  }
+    .btn-prev{
+      left: 0;
+      top: 50%;
+      z-index: 1;
+      transform: rotate(180deg);
+    }
+
+    .btn-next{
+      right: 0;
+      top: 50%;
+      z-index: 1;
+    }
 }

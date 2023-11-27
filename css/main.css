@@ -219,6 +219,7 @@ header button {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 6.4rem;
+  overflow: hidden;
 }
 .s-videos .card-video {
   display: block;
@@ -275,10 +276,44 @@ header button {
   justify-content: space-between;
   margin-bottom: 3.2rem;
 }
+.s-videos .top .swiper-pagination {
+  position: relative;
+  width: auto;
+  bottom: 0;
+}
+.s-videos .top .swiper-pagination .swiper-pagination-bullet {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0;
+  background: #2f2f3b;
+  opacity: 1;
+}
+.s-videos .top .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
 .s-videos .top h2 {
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+.s-videos .container {
+  position: relative;
+}
+.s-videos .btn {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+}
+.s-videos .btn-prev {
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.s-videos .btn-next {
+  right: 0;
+  top: 50%;
+  z-index: 1;
 }
 
 footer {
