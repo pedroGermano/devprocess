@@ -3,6 +3,8 @@
   padding-top: 8rem;
   padding-bottom: 6.4rem;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
 
   .card-video {
     display: block;
@@ -89,26 +91,45 @@
     }
   }
 
-  .container{
+  .container {
     position: relative;
   }
 
-  .btn{
+  .btn {
     position: absolute;
     width: 4rem;
     height: 4rem;
-
   }
-    .btn-prev{
-      left: 0;
-      top: 50%;
-      z-index: 1;
-      transform: rotate(180deg);
-    }
 
-    .btn-next{
-      right: 0;
-      top: 50%;
-      z-index: 1;
-    }
+  .btn.swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .btn-prev {
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+
+  .btn-next {
+    right: 0;
+    top: 50%;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    width: 33.4rem;
+    height: 34.4rem;
+    background: linear-gradient(
+      270deg,
+      #060608 -3.29%,
+      rgba(6, 6, 8, 0) 64.25%
+    );
+    position: absolute;
+    top: 8.9rem;
+    right: 0;
+    z-index: 5;
+  }
 }

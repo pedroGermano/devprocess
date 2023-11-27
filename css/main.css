@@ -220,6 +220,8 @@ header button {
   padding-top: 8rem;
   padding-bottom: 6.4rem;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
 }
 .s-videos .card-video {
   display: block;
@@ -304,6 +306,9 @@ header button {
   width: 4rem;
   height: 4rem;
 }
+.s-videos .btn.swiper-button-disabled {
+  opacity: 0;
+}
 .s-videos .btn-prev {
   left: 0;
   top: 50%;
@@ -314,6 +319,56 @@ header button {
   right: 0;
   top: 50%;
   z-index: 1;
+}
+.s-videos:before {
+  content: "";
+  width: 33.4rem;
+  height: 34.4rem;
+  background: linear-gradient(270deg, #060608 -3.29%, rgba(6, 6, 8, 0) 64.25%);
+  position: absolute;
+  top: 8.9rem;
+  right: 0;
+  z-index: 5;
+}
+
+.s-vilao {
+  width: 100%;
+  height: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../../img/bg-venon.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.s-vilao::after, .s-vilao:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 216px;
+  top: 0;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #000407 0%, rgba(0, 4, 7, 0) 100%);
+}
+.s-vilao h2 {
+  font-family: Mohave, sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.s-vilao p {
+  text-align: center;
+  color: #ceced9;
+  font-size: 1.8rem;
+  margin-bottom: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 footer {
