@@ -50,6 +50,7 @@ header {
   background: rgba(0, 4, 7, 0.9);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  z-index: 1;
 }
 header .container {
   display: flex;
@@ -64,6 +65,10 @@ header nav a {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 150%;
+  transition: all 0.3s ease;
+}
+header nav a:hover {
+  color: #F55827;
 }
 header button {
   border: 2px solid #2f2f3b;
@@ -72,15 +77,35 @@ header button {
   font-weight: 500;
   line-height: 150%;
   border-radius: 3.2rem;
+  transition: all 0.3s ease;
+}
+header button:hover {
+  background: #fff;
+  color: #1b1b21;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.3);
 }
 
 .s-hero {
   width: 100%;
   background: url("../../img/bg-hero.jpg") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   height: 80rem;
   padding-top: 11.2rem;
   padding-bottom: 14.3rem;
+  position: relative;
+  z-index: 2;
+}
+.s-hero:after {
+  content: "";
+  width: 100%;
+  height: 21.6rem;
+  background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transform: rotate(180deg);
 }
 .s-hero .container {
   display: flex;
@@ -90,6 +115,7 @@ header button {
 .s-hero .left {
   width: 100%;
   max-width: 62.2rem;
+  animation: fadeLeft 1s forwards;
 }
 .s-hero .left .platform {
   display: flex;
@@ -138,6 +164,11 @@ header button {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 150%;
+  transition: all 0.3s ease;
+}
+.s-hero .left .value .btns .btn-cart:hover {
+  background: #cf3302;
+  box-shadow: 0px 0px 0px 3px rgba(245, 88, 39, 0.3);
 }
 .s-hero .left .value .btns .btn-favorite {
   display: flex;
@@ -147,6 +178,14 @@ header button {
   width: 5.6rem;
   height: 5.6rem;
   border: 2px solid #2f2f3b;
+  transition: all 0.3s ease;
+}
+.s-hero .left .value .btns .btn-favorite:hover {
+  background: #fff;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.3);
+}
+.s-hero .left .value .btns .btn-favorite:hover img {
+  filter: invert(1);
 }
 .s-hero .left h1 {
   font-size: 5.6rem;
@@ -194,6 +233,7 @@ header button {
   align-items: flex-end;
   gap: 1.6rem;
   margin-top: 4.3rem;
+  animation: fadeRight 1s forwards;
 }
 .s-hero .right span {
   border-radius: 0.6rem;
@@ -215,13 +255,32 @@ header button {
   line-height: 150%;
 }
 
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .s-videos {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 6.4rem;
   overflow: hidden;
   position: relative;
-  z-index: -1;
 }
 .s-videos .card-video {
   display: block;
@@ -338,19 +397,22 @@ header button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url("../../img/bg-venon.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  position: relative;
+  animation: changeBG 10s infinite linear;
   z-index: -1;
+  position: relative;
 }
-.s-vilao::after, .s-vilao:before {
+.s-vilao:before {
   content: "";
-  position: absolute;
   width: 100%;
-  height: 216px;
+  height: 21.6rem;
+  background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0) 100%);
+  position: absolute;
   top: 0;
-  flex-shrink: 0;
-  background: linear-gradient(180deg, #000407 0%, rgba(0, 4, 7, 0) 100%);
+  left: 0;
+  z-index: 2;
 }
 .s-vilao h2 {
   font-family: Mohave, sans-serif;
@@ -371,6 +433,38 @@ header button {
   line-height: 150%;
 }
 
+@keyframes changeBG {
+  0% {
+    background: url("../../img/bg/01.png");
+  }
+  10% {
+    background: url("../../img/bg/02.png");
+  }
+  20% {
+    background: url("../../img/bg/03.png");
+  }
+  30% {
+    background: url("../../img/bg/04.png");
+  }
+  40% {
+    background: url("../../img/bg/05.png");
+  }
+  50% {
+    background: url("../../img/bg/06.png");
+  }
+  60% {
+    background: url("../../img/bg/07.png");
+  }
+  70% {
+    background: url("../../img/bg/08.png");
+  }
+  90% {
+    background: url("../../img/bg/02.png");
+  }
+  100% {
+    background: url("../../img/bg/01.png");
+  }
+}
 footer {
   position: relative;
   padding-top: 9.6rem;
