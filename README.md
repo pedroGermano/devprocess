@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Devpprocess landing page.
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online](https://devprocess.vercel.app/)
 
 - [Assistir aulas](https://www.youtube.com/watch?v=nAf2wbHNKN0&t=2540s)
 
